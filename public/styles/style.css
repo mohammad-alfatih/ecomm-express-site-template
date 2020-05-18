@@ -11,3 +11,135 @@ body {
 a {
   color: #00B7FF;
 }
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+/* HEADER - Begin */
+#topHeader {
+  background: #190106;
+  color: #fff;
+  padding: 12px 0 9px 0;
+  border-bottom: 1px solid rgba(227,221,223,.1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+#topHeaderLinks a {
+  color: #fa6497;
+}
+#topHeaderLinks ul {
+  list-style: none;
+}
+#topHeaderLinks ul li, #bottomHeaderLinks ul li {
+  display: inline-block;
+}
+#bottomHeader {
+  background: #0d0608;
+  color: #e3dddf;
+  padding: 12px 0 9px 0;
+  box-shadow: 0 8px 10px #0d0608;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+#bottomHeaderLinks a {
+  color: #e3dddf;
+}
+/* #headerLogo a {
+  display: inline-block;
+  height: 70px;
+  width: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0252/0298/2960/files/monkeyseeanddo_360x.png?v=1589116197");
+  background: pink;
+} */
+#bottomHeaderLinks ul li {
+  padding: 28px 12px;
+  font-weight: bold;
+}
+/* HEADER - End */
+
+/* JUMBOTRON - Begin */
+#hero {
+  padding: 1px 0 0 150px;
+  background-color: #effef7;
+  background-image: url("https://source.unsplash.com/TZNB27fN350");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+#headline {
+  font-family: 'Indie Flower', cursive;
+  font-size: 110px;
+  position: relative;
+  top: 350px;
+}
+#subheading {
+  font-family: 'Neuton', serif;
+  font-weight: 100;
+  font-size: 35px;
+  position: relative;
+  top: 150px;
+}
+/* JUMBOTRON - End */
+
+/* HIGHLIGHTS - Start */
+#highlights {
+  background-color: #7cf8d3;
+  font-family: 'Neuton', serif;
+  font-size: 25px;
+  color: #09a778;
+  font-weight: bold;
+  height: 100px;
+  box-shadow: 0 5px 8px rgba(13,241,174,.25);
+}
+#highlights div {
+  top: 30px;
+}
+/* HIGHLIGHTS - End */
+
+/* PRODUCTS - Start */
+.section-header {
+  font-family: 'Dancing Script', cursive;
+  color: rgba(250, 100, 151,.3);
+  font-size: 75px;
+  padding: 62px;
+}
+#products ul {
+  list-style: none;
+}
+.product-list-item {
+  width: 250px;
+  border-radius: 15px;
+  margin-bottom: 75px;
+  padding-bottom: 25px;
+  /* border: 2px solid rgba(227,221,223,.2); */
+  box-shadow: 0 1px 8px rgba(250, 100, 151,.2);
+}
+.thumbnail {
+  width: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 15px 4px 4px;
+  height: 400px;
+}
+.old-price {
+  color: #777;
+  font-weight: 100;
+  text-decoration: line-through;
+}
+.new-price {
+  font-weight: bold;
+  font-size: 150%;
+  color: #fa6497;
+}
+/* PRODUCTS - End */
+
+/* FOOTER - Begin */
+footer {
+  height: 350px;
+  background: #0cdea1;
+}
+/* FOOTER - End */

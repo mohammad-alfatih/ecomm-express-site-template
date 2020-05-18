@@ -1,1 +1,44 @@
-<h1>This is the header</h1>
+<header>
+    <section id="topHeader">
+        <nav class="container-fluid">
+            <!-- TODO: Add search control -->
+            <div id="topHeaderLinks" class="pull-right">
+                <ul>
+                    <% headerLinks.topHeader.forEach(function(link) { %>
+                    <li>
+                        <a href="<%= link.location %>">
+                            <i class="<%= link.icon %>"></i>
+                            <%= link.text %>
+                            <span><%= link.value %></span>
+                        </a>
+                    </li>
+                    <% }); %>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="bottomHeader">
+        <nav class="container-fluid">
+            <div class="row">
+                <div id="headerLogo" class="col-sm-3">
+                    <a href="<%= headerLinks.brand.location %>">
+                        <img src="<%= headerLinks.brand.src %>" alt="<%= headerLinks.brand.alt %>">
+                    </a>
+                </div>
+                <div id="bottomHeaderLinks" class="col-sm-9 text-center">
+                    <ul>
+                        <% headerLinks.bottomHeader.forEach(function(link) { %>
+                        <li>
+                            <a href="<%= link.location %>">
+                                <i class="<%= link.icon %>"></i>
+                                <%= link.text.toUpperCase() %>
+                                <span><%= link.value %></span>
+                            </a>
+                        </li>
+                        <% }); %>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>

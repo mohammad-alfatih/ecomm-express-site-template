@@ -1,0 +1,24 @@
+<section class="products">
+    <ul class="row">
+        <% products.list.forEach(function(product) { %>
+            <li class="col-sm-4 text-center">
+                <div class="product-list-item">
+                    <div class="thumbnail" style="background-image: url('<%= product.url %>');">
+                    </div>
+                    <br />
+                    <span><%= product.label %></span>
+                    <br />
+                    <span class="old-price"><%= product.old_price %></span>
+                    <span class="new-price"><%= product.new_price %></span>
+                    <br />
+                    <span class="rating"><% products.render_ratings(product.rating) %></span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </li>
+        <% }); %>
+    </ul>
+</section>
