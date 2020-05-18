@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Neuton:display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
+/* SHARED STYLES - Begin */
 body {
   font: 14px 'Montserrat' "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #f5f3f3;
@@ -13,10 +14,39 @@ a {
 }
 ul {
   list-style: none;
+  padding-left: 0;
 }
-li {
+.li-inline {
   display: inline-block;
 }
+.li-block {
+  display: block;
+}
+.mainLink-light a {
+  color: #e3dddf;
+}
+.mainLink-dark a {
+  color: #190106;
+}
+.section-padding-sm {
+  padding: 12px;
+}
+.section-padding-md {
+  padding: 25px;
+}
+.section-padding-lg {
+  padding: 68px;
+}
+.section-padding-xg {
+  padding: 120px;
+}
+.section-header {
+  font-family: 'Dancing Script', cursive;
+  color: rgba(250, 100, 151,.3);
+  font-size: 75px;
+}
+/* SHARED STYLES - End */
+
 /* HEADER - Begin */
 #topHeader {
   background: #190106;
@@ -29,12 +59,6 @@ li {
 #topHeaderLinks a {
   color: #fa6497;
 }
-#topHeaderLinks ul {
-  list-style: none;
-}
-#topHeaderLinks ul li, #bottomHeaderLinks ul li {
-  display: inline-block;
-}
 #bottomHeader {
   background: #0d0608;
   color: #e3dddf;
@@ -42,9 +66,6 @@ li {
   box-shadow: 0 8px 10px #0d0608;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-}
-#bottomHeaderLinks a {
-  color: #e3dddf;
 }
 /* #headerLogo a {
   display: inline-block;
@@ -100,16 +121,14 @@ li {
 /* HIGHLIGHTS - End */
 
 /* PRODUCTS - Start */
-.section-header {
-  font-family: 'Dancing Script', cursive;
-  color: rgba(250, 100, 151,.3);
-  font-size: 75px;
-  padding: 62px;
-}
 #products ul {
   list-style: none;
 }
 .product-list-item {
+  padding: 0 auto;
+}
+.product-item {
+  margin: 0 auto;
   width: 250px;
   border-radius: 15px;
   margin-bottom: 75px;
@@ -139,7 +158,32 @@ li {
 
 /* FOOTER - Begin */
 footer {
-  height: 350px;
+  padding-bottom: 75px;
   background: #0cdea1;
+  color: #08946b;
+}
+#topFooter {
+  height: 200px;
+  background: #066e50;
+  border-bottom: 1px solid rgba(161,250,224,.9)
+}
+#bottomFooter {
+  height: 350px;
+  /* bor */
+}
+#footerLinks a {
+  color: #e3dddf;
+}
+/* #footerLogo a {
+  display: inline-block;
+  height: 70px;
+  width: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0252/0298/2960/files/monkeyseeanddo_360x.png?v=1589116197");
+  background: pink;
+} */
+.footer-links {
+  line-height: 200%;
+}
+#footerMessage {
 }
 /* FOOTER - End */

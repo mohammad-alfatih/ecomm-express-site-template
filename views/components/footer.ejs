@@ -1,30 +1,54 @@
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div id="footerMain">
-                    <h3>This is major footer information</h3>
+    <section id="topFooter" class="section-padding-md">
+        
+    </section>
+
+    <section id="bottomFooter" class="section-padding-lg mainLink-light">
+        <div class="container">
+            <div class="row">
+                <div id="footerMessage" class="col-sm-6">
+                    <div id="footerLogo">
+                        <a href="<%= footerLinks.brand.location %>">
+                            <img src="<%= footerLinks.brand.src %>" alt="<%= footerLinks.brand.alt %>">
+                        </a>
+                    </div>
+                    <div id="footerMain">
+                        <h3>This is major footer information</h3>
+                    </div>
+                    <div id="footerSub">
+                        <h5>Irresistable Curves 2020</h5>
+                    </div>
                 </div>
-                <div id="footerSub">
-                    <h5>Irresistable Curves 2020</h5>
+                <div id="footerLinks_1" class="col-sm-3 footer-links">
+                    <h3><%= footerLinks.footerLinks_1.heading.toUpperCase() %></h3>
+                    <ul>
+                        <% footerLinks.footerLinks_1.links.forEach(function(link) { %>
+                        <li>
+                            <a href="<%= link.location %>">
+                                <i class="<%= link.icon %>"></i>
+                                <%= link.text.toUpperCase() %>
+                                <span><%= link.value %></span>
+                            </a>
+                        </li>
+                        <% }); %>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <ul id="footerLinks_1">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <ul id="footerLinks_2">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div id="footerLinks_2" class="col-sm-3 footer-links">
+                    <h3><%= footerLinks.footerLinks_2.heading.toUpperCase() %></h3>
+                    <ul>
+                        <% footerLinks.footerLinks_2.links.forEach(function(link) { %>
+                        <li>
+                            <a href="<%= link.location %>">
+                                <i class="<%= link.icon %>"></i>
+                                <%= link.text.toUpperCase() %>
+                                <span><%= link.value %></span>
+                            </a>
+                        </li>
+                        <% }); %>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
 </footer>
