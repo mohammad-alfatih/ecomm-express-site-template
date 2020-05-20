@@ -14,8 +14,8 @@ router.get('/', function(req, res, next) {
     title: 'Our latest products',
     headerLinks: headerLinks,
     footerLinks: footerLinks,
-    render_ratings: products.render_ratings,
-    products: list
+    products: list,
+    render_ratings: products.render_ratings
   });
 });
 
