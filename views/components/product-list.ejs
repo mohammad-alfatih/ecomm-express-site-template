@@ -1,6 +1,6 @@
 <section class="products">
     <ul class="row">
-        <% products.list.forEach(function(product) { %>
+        <% products.forEach(function(product) { %>
             <li class="col-sm-3 text-center product-list-item">
                 <div class="product-item">
                     <div class="thumbnail" style="background-image: url('<%= product.url %>');">
@@ -11,7 +11,7 @@
                     <span class="old-price"><%= product.old_price %></span>
                     <span class="new-price"><%= product.new_price %></span>
                     <br />
-                    <span class="rating"><% products.render_ratings(product.rating) %></span>
+                    <span class="rating"><% render_ratings(product.rating) %></span>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>

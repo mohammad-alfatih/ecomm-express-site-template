@@ -8,11 +8,14 @@ const products = require('../mockData/product-list');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   const category = req.query.category
+  const list = products.list.filter(x => x.categories.includes(category));
 
   res.render('products', {
     title: 'Our latest products',
     headerLinks: headerLinks,
-    footerLinks: footerLinks
+    footerLinks: footerLinks,
+    render_ratings: products.render_ratings,
+    products: list
   });
 });
 
