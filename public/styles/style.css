@@ -43,6 +43,7 @@ ul {
 .section-header {
   font-family: 'Dancing Script', cursive;
   color: rgba(250, 100, 151,.3);
+  margin: 68px 0;
   font-size: 75px;
 }
 /* SHARED STYLES - End */
@@ -52,8 +53,8 @@ ul {
   background: #190106;
   color: #fff;
   padding: 12px 0 9px 0;
-  border-bottom: 1px solid rgba(227,221,223,.1);
   font-family: 'Montserrat', sans-serif;
+  border-bottom: 2px solid rgba(18,1,6,.9);
   font-weight: 900;
 }
 #topHeaderLinks a {
@@ -64,6 +65,8 @@ ul {
   color: #e3dddf;
   padding: 12px 0 9px 0;
   box-shadow: 0 8px 10px #0d0608;
+  border-top: 2px solid rgba(227,221,223,.03);
+  border-bottom: 2px solid rgba(227,221,223,.3);
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
@@ -165,9 +168,11 @@ footer {
 #topFooter {
   height: 200px;
   background: #066e50;
-  border-bottom: 1px solid rgba(161,250,224,.9)
+  border-bottom: 2px solid rgba(1,17,13,.3);
+  border-top: 2px solid rgba(148, 247, 217, 0.7 );
 }
 #bottomFooter {
+  border-top: 2px solid rgba(148, 247, 217, 0.7 );
   height: 350px;
   /* bor */
 }
