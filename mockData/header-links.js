@@ -31,31 +31,31 @@ module.exports = {
     bottomHeader: [
         {
             text: "Today's Deals",
-            location: "/account"
+            location: "deals"
         },
         {
             text: "Waist Trainers",
-            location: "/account"
+            location: "waist_trainers"
         },
         {
             text: "Shape Wear",
-            location: "/account"
+            location: "shape_wear"
         },
         {
             text: "Butt Lifters",
-            location: "/account"
+            location: "butt_lifters"
         },
         {
             text: "Workout",
-            location: "/account"
+            location: "workout"
         },
         {
             text: "Contact Us",
-            location: "/account"
+            location: "/contact"
         },
         {
             text: "Order Tracking",
-            location: "/account"
+            location: "/tracking"
         }
     ]
 }
