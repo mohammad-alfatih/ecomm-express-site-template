@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 
 const homeRouter = require('./routes/home');
 const productsRouter = require('./routes/products');
+const itemRouter = require('./routes/item');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // set up routes
 app.use('/', homeRouter);
 app.use('/products', productsRouter);
+app.use('/item', itemRouter);
 
 // error handler
 app.use(function(err, req, res, next) {
