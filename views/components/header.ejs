@@ -5,7 +5,7 @@
             <div id="topHeaderLinks" class="pull-right">
                 <ul>
                     <% headerLinks.topHeader.forEach(function(link) { %>
-                    <li class="li-inline">
+                    <li class="ul-inline">
                         <a href="<%= link.location %>">
                             <i class="<%= link.icon %>"></i>
                             <%= link.text %>
@@ -26,9 +26,9 @@
                     </a>
                 </div>
                 <div id="bottomHeaderLinks" class="col-sm-9 text-center mainLink-light">
-                    <ul>
+                    <ul class="ul-inline">
                         <% headerLinks.bottomHeader.forEach(function(link) { %>
-                        <li class="li-inline">
+                        <li>
                             <a href="/products?category=<%= link.location %>">
                                 <i class="<%= link.icon %>"></i>
                                 <%= link.text.toUpperCase() %>

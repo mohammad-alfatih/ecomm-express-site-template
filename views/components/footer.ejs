@@ -32,7 +32,7 @@
                 </div>
                 <div id="footerLinks_1" class="col-sm-3 footer-links">
                     <h3><%= footerLinks.footerLinks_1.heading.toUpperCase() %></h3>
-                    <ul>
+                    <ul class="list-inline">
                         <% footerLinks.footerLinks_1.links.forEach(function(link) { %>
                         <li>
                             <a href="<%= link.location %>">
@@ -46,7 +46,7 @@
                 </div>
                 <div id="footerLinks_2" class="col-sm-3 footer-links">
                     <h3><%= footerLinks.footerLinks_2.heading.toUpperCase() %></h3>
-                    <ul>
+                    <ul class="ul-block">
                         <% footerLinks.footerLinks_2.links.forEach(function(link) { %>
                         <li>
                             <a href="<%= link.location %>">
