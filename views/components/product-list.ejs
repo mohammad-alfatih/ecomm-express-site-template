@@ -1,22 +1,24 @@
-<section class="products">
+<section id="products">
     <ul class="row">
-        <% products.forEach(function(product) { %>
+        <% products.forEach((product) => { %>
             <li class="col-sm-3 text-center product-list-item">
                 <div class="product-item">
-                    <div class="thumbnail" style="background-image: url('<%= product.url %>');">
-                    </div>
-                    <br />
-                    <span><%= product.label %></span>
-                    <br />
-                    <span class="old-price"><%= product.old_price %></span>
-                    <span class="new-price"><%= product.new_price %></span>
-                    <br />
-                    <span class="rating"><% render_ratings(product.rating) %></span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                    <a href="/item?name=<%= product.name %>">
+                        <div class="thumbnail" style="background-image: url('<%= product.url %>');">
+                        </div>
+                        <br />
+                        <span><%= product.label %></span>
+                        <br />
+                        <span class="old-price"><%= product.old_price %></span>
+                        <span class="new-price"><%= product.new_price %></span>
+                        <br />
+                        <span class="rating"><% render_ratings(product.rating) %></span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </a>
                 </div>
             </li>
         <% }); %>
