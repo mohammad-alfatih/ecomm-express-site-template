@@ -26,13 +26,14 @@
             </div>
 
             <div id="item_details_rating" class="item-details-section">
-                <h4>Ratings</h4>
-                <%= render_ratings(item.rating) %>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <h4>Rating</h4>
+                <div class="review-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-o checked"></span>
+                    <span class="fa fa-star-o"></span>
+                </div>
             </div>
 
             <div id="item_details_size_picker" class="item-details-section">
@@ -185,8 +186,8 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-o"></span>
                             </div>
                             <div class="reviewer-info-date"><%= review.date %></div>
                         </div>
