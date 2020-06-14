@@ -90,15 +90,26 @@
             <div id="item_details_checkout" class="item-details-section">
                 <div class="row">
                     <div id="item_details_quantity_picker" class="col-sm-6">
-                        <span id="quantity_down" class="quantity-button btn-sm">-</span>
-                        <input class="quantity-input" type="number" value="1">
-                        <span id="quantity_up" class="quantity-button btn-sm">+</span>
+                        <span id="quantity_down" onclick="incrementValue(false)" class="quantity-button btn-sm">-</span>
+                        <input id="quantity_input" class="quantity-input" type="number" value="1">
+                        <span id="quantity_up" onclick="incrementValue(true)" class="quantity-button btn-sm">+</span>
                     </div>
                     <div id="item_add_cart" class="col-sm-6">
                         <button class="btn btn-primary">Add to Cart</button>
                     </div>
                 </div>
             </div>
+
+            <script>
+                function incrementValue(add) {
+                    var qInput = document.getElementById("quantity_input");
+                    var qVal = parseInt(qInput.value, 10);
+                    qVal = isNaN(qVal) ? 1 : qVal;
+
+                    if (add) qInput.value++;
+                    else qInput.value--;
+                }
+            </script>
 
             <div id="item_details_info" class="item-details-section">
                 <div id="item_details_info_summary" class="item-details-info">
