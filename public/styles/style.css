@@ -215,10 +215,14 @@ footer {
 /* SINGLE ITEM - Start */
 .item-view {
   height: 700px;
-  width: inherit;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#item_details_images {
+  margin-top: 20px;
+  cursor: pointer;
 }
 .item-images-list li {
   text-align: center;
@@ -229,11 +233,15 @@ footer {
   /* padding-top: 18px; */
   padding-bottom: 25px;
 }
+#item_info {
+  padding-left: 4em;
+}
 .quantity-input {
   width: 4em;
   text-align: center;
 }
 .quantity-button  {
+  cursor: pointer;
   border: 1px solid #888;
   box-shadow: 1px 1px 3px #888;
 }
@@ -287,7 +295,7 @@ input[type=number] {
 .item-details-body ul {
   padding-left: 15px;
 }
-.reviewer-info-avatar {
+.reviewer-info-avatar, .item-image {
   width: 5em;
   height: 5em;
   background-position: center;

@@ -3,18 +3,24 @@
         <h2 class="section-header"><%= item.label %></h2>
     </div>
     <div id="item_details" class="row">
-        <div class="col-sm-6 text-center product-list-item">
-            <div id="item_details_view" class="item-view" style="background-image: url('<%= item.url %>');">
+        <div id="item_view" class="col-sm-6 text-center product-list-item">
+            <div id="item_details_view" class="item-view" style="background-image: url('<%= details.imageUrls[0] %>');">
             </div>
-            <div id="item_details_images">
-                <ul class="item-images-list ul-inline">
-                    <li class="item-image">pic 1</li>
-                    <li class="item-image">pic 2</li>
-                    <li class="item-image">pic 3</li>
-                </ul>
-            </div>
+            <ul id="item_details_images" class="item-images-list ul-inline">
+                <% details.imageUrls.forEach(url => { %>
+                <li class="item-image" onclick="showSelectedPic('<%= url %>')" style="background-image: url('<%= url %>');"></li>
+                <% }) %>
+            </ul>
         </div>
-        <div class="col-sm-6">
+
+        <script>
+            function showSelectedPic(url) {
+                var activeImg = document.getElementById("item_details_view");
+                activeImg.style.backgroundImage = `url(${url})`;
+            }
+        </script>
+
+        <div id="item_info" class="col-sm-6 padding">
             <div id="item_details_name" class="item-details-section">
                 <h3><%= item.label %></h3>
                 <!-- <p><%= item.description %></p> -->

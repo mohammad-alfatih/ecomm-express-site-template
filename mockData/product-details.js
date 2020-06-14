@@ -26,7 +26,11 @@ module.exports = {
             old_price: "$120",
             new_price: "$85",
             rating: 4.5,
-            url: "https://source.unsplash.com/k8OCHhEymME",
+            imageUrls: [
+                "https://source.unsplash.com/k8OCHhEymME",
+                "https://source.unsplash.com/Mqxav2v_rJQ",
+                "https://source.unsplash.com/QY0qR938qL8"
+            ],
             sizes: ["XS","S","XL",],
             colors: ["#fff","#222","#44a"],
             info: {
