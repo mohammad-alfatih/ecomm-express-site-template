@@ -1,15 +1,18 @@
 <header>
-    <section id="topHeader">
-        <nav class="container-fluid">
+    <section id="topHeader" class="warm-low">
+        <button class="navbar-toggler collapsed warm-high pull-left" type="button" data-toggle="collapse" data-target="#bottomHeader" aria-controls="bottomHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> <i class="fa fa-plus"></i> </span>
+        </button>
+        <nav class="pull-right">
             <!-- TODO: Add search control -->
             <div id="topHeaderLinks" class="pull-right">
                 <ul>
                     <% headerLinks.topHeader.forEach(function(link) { %>
                     <li class="ul-inline">
-                        <a href="<%= link.location %>">
+                        <a href="<%= link.location %>" class="warning-text">
                             <i class="<%= link.icon %>"></i>
-                            <%= link.text %>
-                            <span><%= link.value %></span>
+                            <!-- <%= link.text %> -->
+                            <!-- <span><%= link.value %></span> -->
                         </a>
                     </li>
                     <% }); %>
@@ -17,7 +20,7 @@
             </div>
         </nav>
     </section>
-    <section id="bottomHeader">
+    <section id="bottomHeader" class="light navbar-collapse collapse">
         <nav class="container-fluid">
             <div class="row">
                 <div id="headerLogo" class="col-sm-3">
@@ -25,11 +28,11 @@
                         <img src="<%= headerLinks.brand.src %>" alt="<%= headerLinks.brand.alt %>">
                     </a>
                 </div>
-                <div id="bottomHeaderLinks" class="col-sm-9 text-center mainLink-light">
-                    <ul class="ul-inline">
+                <div id="bottomHeaderLinks" class="col-sm-9 text-center">
+                    <ul class="ul-inline row">
                         <% headerLinks.bottomHeader.forEach(function(link) { %>
-                        <li>
-                            <a href="/products?category=<%= link.location %>">
+                        <li class="col-xs-12">
+                            <a href="/products?category=<%= link.location %>" class="warm-low-text">
                                 <i class="<%= link.icon %>"></i>
                                 <%= link.text.toUpperCase() %>
                                 <span><%= link.value %></span>
