@@ -4,6 +4,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Neuton:display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
+/* COLORS */
+.light {
+  background-color: #fbf3ef;
+  color: #6d6875;
+}
+.cool-high {
+  background-color: #ffcdb2;
+  color: #6d6875;
+}
+.cool-low {
+  background-color: #ffb4a2;
+  color: #6d6875;
+}
+.dark {
+  background-color: #6d6875;
+  color: #fbf3ef;
+}
+.warm-high {
+  background-color: #e5989b;
+  color: #6d6875;
+}
+.warm-low {
+  background-color: #b5838d;
+  color: #6d6875;
+}
+.hype-high {
+  background-color: #eea7fd;
+  color: #6d6875;
+}
+.hype-low {
+  background-color: #ff6fff;
+  color: #fbf3ef;
+}
+.success {
+  background-color: #64ffb4;
+  color: #fbf3ef;
+}
+.warning {
+  background-color: #f2ec5e;
+  color: #6d6875;
+}
+.caution {
+  background-color: #ff8131;
+  color: #fbf3ef;
+}
+.danger {
+  background-color: #fd0e59;
+  color: #fbf3ef;
+}
+.light-text {
+  color: #fbf3ef;
+}
+.cool-high-text {
+  color: #ffcdb2;
+}
+.cool-low-text {
+  color: #ffb4a2;
+}
+.dark-text {
+  color: #6d6875;
+}
+.warm-high-text {
+  color: #e5989b;
+}
+.warm-low-text {
+  color: #b5838d;
+}
+.hype-high-text {
+  color: #eea7fd;
+}
+.hype-low-text {
+  color: #ff6fff;
+}
+.success-text {
+  color: #64ffb4;
+}
+.warning-text {
+  color: #f2ec5e;
+}
+.caution-text {
+  color: #ff8131;
+}
+.danger-text {
+  color: #fd0e59;
+}
+
 /* SHARED STYLES - Begin */
 body {
   font: 14px 'Montserrat' "Lucida Grande", Helvetica, Arial, sans-serif;
